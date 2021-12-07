@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>색 찾기</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>진짜 색깔을 찾아라!</h1>
+  <h2>점수: <input id="result" readonly /></h3>
+  <!-- 시작버튼 및 문제 -->
+  <div id="container">
+    <div id="start" onclick="getStart()">시작하기!</div>
+    <div class="item" id="first" onclick="정답클릭시(), 다음문제()" ></div>
+    <div class="item" id="second" onclick="다음문제()"></div>
+    <div class="item" id="third" onclick="다음문제()"></div>  
+    <div class="item" id="forth" onclick="다음문제()"></div>
+  </div>
+  <!-- 남은 시간, 이전 점수 -->
+  <div id="remain"><br></div>
+  <div id="lastScore">이전 점수: </div>
+</body>
+<script src="script.js"></script>
+</html>
